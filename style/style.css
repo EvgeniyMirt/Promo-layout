@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 25px 10px;
+}
+
+
+
+/* Секция */
+
+.container {
+    margin: 0 auto; 
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/* Шрифт в секции */
+
+.advantages > h2, .specialists-container > h2, .procedures-for-price > h2, .testimonials > h2, .our-advantages-container > h2{
+    font-size: 18px;
+}
+
+
+
+/* Группа классов/тегов */
+
+.block {
+    max-height: 250px;
+}
+
+.advantages-specialists-container, .testimonials-procedures-container, .our-advantages-container {
+    margin-top: 40px;
+}
+
+.advantages > h2, .procedures-for-price > h2, .our-advantages-container > h2, .specialists-container > h2, .testimonials > h2, .specialists-container > h2 {
+    margin-bottom: 15px;
+}
+
+/* Фото */
+
+.promo-image-container {
+    flex-basis: 236px; 
+}
+
+.promo-image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+/* Акция */
+
+.promo-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 434px;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.promo, .promo-procedures, .promo-duration {
+    text-align: left;
+}
+
+.promo, .promo-procedures, .promo-duration {
+    text-align: left;
+}
+
+.promo-procedures {
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.promo-procedures > span:first-child {
+    line-height: 1.5;
+}
+
+.promo-procedures > span:last-child {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.promo-duration {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+data {
+    font-weight: 700;
+}
+
+.promo-block-decorate {
+    background-color: #428bca;
+    position: relative;
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+.promo-block-decorate p {
+    font-size: 16px;
+    padding: 20px 0 20px 20px;
+}
+
+.promo-block-decorate p:after {
+    content: '';
+    position: absolute;
+    margin-left: 5px;
+    left: clamp(150px, 110%, 460px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-left: 46px solid #428bca;
+}
+
+
+
+/* Акция участие */
+
+.take-part-container {
+    border: 1px solid;
+    border-radius: 5px;
+    flex-basis: 420px;
+}
+
+.take-part {
+    border-bottom: 1px solid;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.info {
+    text-align: center;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form input, button {
+    margin-bottom: 10px;
+    height: 38px;
+}
+
+
+.info, form {
+    margin: 5px 10px;
+}
+
+button {
+    padding-block: 0;
+    padding-inline: 0;
+    border-width: 1px;
+    max-width: 384px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+input {
+    max-width: 380px;
+    width: 100%;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+input::placeholder {
+    padding-left: 5px;
+}
+
+
+
+/* Преимущества Opalescence */
+
+.advantages-specialists-container {
+    flex-basis: 351px;
+}
+
+.advantages {
+    margin-bottom: 30px;
+}
+
+.advantages > ul {
+    margin-left: 16px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+/* Наши специалисты */
+
+.specialists {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.specialists::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(./u33.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(0%, 100%);
+}
+
+.specialists::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    transform: translate(0%, 100%);
+    background-image: url(./u34.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.specialist {
+    max-width: 106px;
+    max-height: 123px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.specialist > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+/* В стоимость процедур*/
+
+.testimonials-procedures-container  {
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-basis: 349px;
+}
+
+.procedures-for-price > div {
+    border-radius: 5px;
+    background-color: #428bca;
+}
+.procedures-for-price > div > ul {
+    padding: 18px;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+
+
+/* Отзывы */
+
+.testimonials {
+    margin-top: 34px;
+}
+
+.testimonials h2 {
+    font-size: 18px;
+}
+
+.testimonials > div {
+    max-width: 312px;
+}
+
+.testimonials > div > a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+
+/* Наши преимущества */
+
+.our-advantages-container {
+    flex-basis: 420px;
+}
+
+.our-advantages-container > h2 {
+    margin-bottom: 20px;
+}
+
+.our-advantages-container > div {
+    position: relative;
+}
+
+.our-advantages-container > div > div > img {
+    width: 39px;
+    height: 38px;
+    margin-right: 20px;
+}
+
+.our-advantages-container > div {
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+}
+
+.advantages-text {
+    font-size: 14px;
+}
+
+
+/* медия */
+
+
+@media (max-width: 1224px) {
+
+    /* Секция*/
+
+    .container {
+        margin-right: 0;
+        justify-content: space-around;
+    }
+
+    .block {
+        flex-basis: 450px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .promo-block-decorate > p::after {
+        display: none;
+    }
+
+    .take-part-container {
+        margin-top: 40px;
+    }
+
+    .our-advantages-container {
+        margin-top: 150px;
+    }
+
+    .promo-image-container > img {
+
+    }
+}
+
+@media (max-width: 968px) {
+
+    /* Секция*/
+
+    .container {
+        justify-content: center;
+    }
+
+    .block {
+        flex-basis: 600px;
+    }
+
+    .promo-container {
+        margin-top: 40px;
+    }
+
+    .testimonials-procedures-container {
+        margin-top: 150px;
+    }
+
+    .our-advantages-container  {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 468px) {
+
+    /* Секция*/
+
+    .container {
+        justify-content: center;
+    }
+
+    .block {
+        flex-basis: 400px;
+    }
+
+    .promo-container {
+        margin-top: 40px;
+    }
+
+    .testimonials-procedures-container {
+        margin-top: 140px;
+    }
+
+    .our-advantages-container  {
+        margin-top: 40px;
+    }
+
+    .advantages > h2, .specialists-container > h2, .procedures-for-price > h2, .testimonials > h2, .our-advantages-container > h2{
+        font-size: 16px;
+    }
+
+    .promo-container, .take-part-container, .advantages-specialists-container, .our-advantages-container {
+        margin-top: 20px;
+    }
+    
+    .advantages-text, .inf, .promo-duration {
+        font-size: 13px;
+    }
+
+    .advantages > ul {
+        font-size: 13px; 
+    }
+
+    .promo-procedures {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .promo-procedures > span:first-child {
+        line-height: 1.2;
+    }
+    
+    .promo-procedures > span:last-child {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    .promo-block-decorate p {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .promo-container > h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    body {
+        margin-top: 10px;
+    }
+
+    .testimonials {
+        margin-top: 20px;
+    }
+}
